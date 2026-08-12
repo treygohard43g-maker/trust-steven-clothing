@@ -416,3 +416,118 @@ footer p {
         padding: 100px 25px;
     }
 }
+
+/* =========================
+   LUXURY MENU
+========================= */
+
+.menu-icon {
+    background: none;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    display: block;
+    width: 25px;
+    height: 1px;
+    background: #111;
+    margin: 7px 0;
+}
+
+
+/* FULL SCREEN MENU */
+
+.menu-overlay {
+    position: fixed;
+
+    inset: 0;
+
+    background: #111;
+
+    color: white;
+
+    z-index: 9999;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition:
+        opacity 0.4s ease,
+        visibility 0.4s ease;
+}
+
+
+/* MENU OPEN */
+
+.menu-overlay.active {
+    opacity: 1;
+
+    visibility: visible;
+}
+
+
+/* CLOSE BUTTON */
+
+.close-menu {
+    position: absolute;
+
+    top: 25px;
+
+    right: 5%;
+
+    background: none;
+
+    border: none;
+
+    color: white;
+
+    font-size: 40px;
+
+    font-weight: 200;
+
+    cursor: pointer;
+}
+
+
+/* MENU LINKS */
+
+.main-menu {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+.main-menu a {
+    color: white;
+
+    text-decoration: none;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: clamp(32px, 5vw, 55px);
+
+    font-weight: 400;
+
+    letter-spacing: 2px;
+
+    transition: 0.3s;
+}
+
+.main-menu a:hover {
+    color: #b89b5e;
+
+    letter-spacing: 5px;
+}
