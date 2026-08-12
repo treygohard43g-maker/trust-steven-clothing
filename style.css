@@ -1,0 +1,418 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f8f6f1;
+    color: #111111;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    height: 85px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 5%;
+
+    background: #f8f6f1;
+
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 25px;
+
+    font-weight: 600;
+
+    letter-spacing: 4px;
+
+    white-space: nowrap;
+}
+
+.menu-icon {
+    width: 28px;
+
+    cursor: pointer;
+}
+
+.menu-icon span {
+    display: block;
+
+    width: 22px;
+
+    height: 1px;
+
+    background: #111;
+
+    margin: 6px 0;
+}
+
+.header-icons {
+    margin-left: auto;
+
+    display: flex;
+
+    gap: 18px;
+}
+
+.header-icons button {
+    background: none;
+
+    border: none;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    color: #111;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+    min-height: calc(100vh - 85px);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    position: relative;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.25),
+            rgba(0,0,0,0.25)
+        ),
+        url("images/hero.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: white;
+}
+
+.hero-content {
+    max-width: 800px;
+
+    padding: 30px;
+}
+
+.eyebrow {
+    font-size: 12px;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: clamp(55px, 9vw, 110px);
+
+    line-height: 0.85;
+
+    font-weight: 500;
+
+    letter-spacing: 3px;
+}
+
+.hero-text {
+    margin-top: 30px;
+
+    font-size: 14px;
+
+    letter-spacing: 2px;
+}
+
+.hero-button {
+    display: inline-block;
+
+    margin-top: 35px;
+
+    padding: 16px 30px;
+
+    border: 1px solid white;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background: white;
+
+    color: #111;
+}
+
+
+/* =========================
+   COLLECTION
+========================= */
+
+.collection {
+    padding: 110px 6%;
+}
+
+.section-heading {
+    text-align: center;
+
+    margin-bottom: 60px;
+}
+
+.section-heading p {
+    font-size: 10px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 12px;
+}
+
+.section-heading h2 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 55px;
+
+    font-weight: 500;
+}
+
+.collection-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+.collection-card {
+    text-align: center;
+}
+
+.product-placeholder {
+    height: 600px;
+
+    background: #dedbd4;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 45px;
+
+    letter-spacing: 4px;
+}
+
+.collection-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 27px;
+
+    font-weight: 500;
+
+    margin-top: 22px;
+}
+
+.collection-card a {
+    display: inline-block;
+
+    margin-top: 10px;
+
+    color: #111;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    text-decoration: none;
+
+    border-bottom: 1px solid #111;
+
+    padding-bottom: 4px;
+}
+
+
+/* =========================
+   STATEMENT
+========================= */
+
+.statement {
+    padding: 140px 20px;
+
+    text-align: center;
+
+    background: #111;
+
+    color: white;
+}
+
+.statement > p:first-child {
+    font-size: 10px;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 25px;
+}
+
+.statement h2 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: clamp(45px, 7vw, 80px);
+
+    font-weight: 400;
+
+    line-height: 1;
+}
+
+.gold-line {
+    width: 55px;
+
+    height: 1px;
+
+    background: #b89b5e;
+
+    margin: 40px auto;
+}
+
+.statement-text {
+    max-width: 500px;
+
+    margin: auto;
+
+    font-size: 13px;
+
+    line-height: 1.9;
+
+    color: #cfcfcf;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #111;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 50px 20px;
+
+    border-top: 1px solid #292929;
+}
+
+.footer-logo {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 24px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 15px;
+}
+
+footer p {
+    font-size: 9px;
+
+    color: #999;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .header {
+        height: 70px;
+    }
+
+    .logo {
+        font-size: 18px;
+
+        letter-spacing: 2px;
+    }
+
+    .header-icons {
+        gap: 10px;
+    }
+
+    .hero {
+        min-height: calc(100vh - 70px);
+    }
+
+    .hero h1 {
+        font-size: 58px;
+    }
+
+    .collection {
+        padding: 80px 20px;
+    }
+
+    .section-heading h2 {
+        font-size: 45px;
+    }
+
+    .collection-grid {
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+    }
+
+    .product-placeholder {
+        height: 480px;
+    }
+
+    .statement {
+        padding: 100px 25px;
+    }
+}
